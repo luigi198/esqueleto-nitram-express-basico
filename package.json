@@ -1,11 +1,11 @@
 {
-	"name": "Nitramjs-skeleton",
-	"description": "App skeleton with Node.js + Express.js + Jade + jQuery + History.js + Require.js + Nitram.js",
+	"name": "Nitramjs-mongo-skeleton",
+	"description": "App skeleton with Node.js + Express.js + Jade + jQuery + History.js + Require.js + Nitram.js + MongoDB",
 	"version": "0.0.1",
 	"locale": "[TODO: en]",
 	"author": {
-		"name": "Martin Schaer",
-		"email": "martin@interaction.cr"
+		"name": "Luis Córdoba",
+		"email": "luis.cordoba198@gmail.com"
 	},
 	"engines": {
 		"node": "0.10.x",

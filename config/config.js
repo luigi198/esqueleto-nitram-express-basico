@@ -1,5 +1,6 @@
-var path = require('path')
-var rootPath = path.resolve(__dirname + '../..')
+var path = require('path'),
+	rootPath = path.resolve(__dirname + '../..'),
+	title = '[TODO: title]';
 
 // -----------------------
 // Expose config
@@ -12,20 +13,34 @@ var rootPath = path.resolve(__dirname + '../..')
 // gaid: Google Analytics property ID
 
 module.exports = {
-  development: {
-    root: rootPath,
-    publicdir: '/public',
-    title: '[TODO: title]',
-    fbappid: '[TODO: Facebook App ID]',
-    gaid: '[TODO: UA]',
-    domain: '[TODO: domain]'
-  },
-  production: {
-    root: rootPath,
-    publicdir: '/public',
-    title: '[TODO: title]',
-    fbappid: '[TODO: Facebook App ID]',
-    gaid: '[TODO: UA]',
-    domain: 'http://www.nitramjs.com'
-  }
+	development: {
+		root: rootPath,
+		publicdir: '/public',
+		title: '[dev] ' + title,
+		style: '/css/style.css',
+		main: '/js/main.js',
+		fbappid: '[TODO: Facebook App ID]',
+		gaid: '[TODO: UA]',
+		domain: '[TODO: domain]'
+	},
+	staging: {
+		root: rootPath,
+		publicdir: '/public',
+		title: title,
+		style: '/css/style.css',
+		main: '/js/main.js',
+		fbappid: '[TODO: Facebook App ID]',
+		gaid: '[TODO: UA]',
+		domain: '[TODO: Domain]'
+	},
+	production: {
+		root: rootPath,
+		publicdir: '/public',
+		title: title,
+		style: '/css/style.css',
+		main: '/js/main.js',
+		fbappid: '[TODO: Facebook App ID]',
+		gaid: '[TODO: UA]',
+		domain: '[TODO: Domain]'
+	}
 }
